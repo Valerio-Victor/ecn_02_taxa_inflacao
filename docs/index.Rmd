@@ -46,19 +46,10 @@ xaringanExtra::use_search(show_icon = TRUE)
 - [**INTRODUÇÃO**](#introducao)
 
 
-</br>
-
-
 - [**CONCEITO DE INFLAÇÃO**](#conceitoipca)
 
 
-</br>
-
-
 - [**CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO**](#causas_inflacao)
-
-
-</br>
 
 
 - [**REFERÊNCIAS**](#referencias)
