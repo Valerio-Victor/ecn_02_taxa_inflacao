@@ -35,7 +35,7 @@ class: center, middle, inverse, title-slide
 ### Autor: Victor Valerio
 ]
 .date[
-### Última atualização: 12-04-2023
+### Última atualização: 14-04-2023
 ]
 
 ---
@@ -45,318 +45,166 @@ class: center, middle, inverse, title-slide
 
 
 
-
-
 ## TÓPICOS ABORDADOS
-
-
 &lt;/br&gt;
-
 
 - [**INTRODUÇÃO**](#introducao)
 
-
 - [**CONCEITO DE INFLAÇÃO**](#conceitoipca)
-
 
 - [**CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO**](#causas_inflacao)
 
-
 - [**REFERÊNCIAS**](#referencias)
-
-
-
-
-
-
-
 
 ---
 class: inverse, center, middle 
 name: introducao
 
-
 ## INTRODUÇÃO
 
-
-
-
-
-
-
-
 ---
-
-
 ## O BRASIL EM PERSPECTIVA
 
-
-<div id="htmlwidget-5437aa9ab06c1f2ebf01" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-5437aa9ab06c1f2ebf01">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-
-
-
-
-
-
-
+<div id="htmlwidget-a98b47385ae7fea9eda0" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-a98b47385ae7fea9eda0">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-2.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
+## INTRODUÇÃO
+&lt;div style="text-align: justify"&gt;
 
+- Antes de prosseguir, é necessário definir o que é uma **CESTA DE CONSUMO**, 
+conjunto de bens e serviços (tipos e quantidades de produtos) efetivamente 
+consumidos por um determinado consumidor. 
 
+- O conceito de cesta de consumo também pode ser utilizado para representar o 
+"consumo típico" de um determinado grupo de indivíduos que possuem o mesmo padrão 
+de consumo. Para tanto, basta-se definir alguns critérios para o grupo
+
+  - **RENDA**;
+  - **PERÍODO**;
+  - **ESPAÇO**;
+  - **CULTURA**.
+  
+---
 ## O BRASIL EM PERSPECTIVA
 
-
-<div id="htmlwidget-14bc8448e2ef1962b699" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-14bc8448e2ef1962b699">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-
-
-
-
-
-
-
+<div id="htmlwidget-94e5680e5b8732eeaadf" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-94e5680e5b8732eeaadf">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-3.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## INTRODUÇÃO
 
+- Define-se por série histórica (ou série temporal) a análise de uma determinada 
+variável ao longo do tempo. Este tipo de análise é amplamente utilizada em 
+economia, visto que, os analistas buscam recorrentemente avaliar a evolução da 
+conjuntura econômica em diferentes períodos.
 
-**REVISÃO DE CONCEITOS**
+- Em geral, nessas análises as variações entre os períodos podem trazer 
+informações tão relevantes quanto o próprio valor absoluto do indicador. 
+Por exemplo, saber quanto o PIB cresceu no último ano é tão importante quanto saber
+o seu respectivo valor absoluto.
+
+---
+&lt;div style="text-align: justify"&gt;
+## INTRODUÇÃO
+
+- Assim, desenvolveu-se um recurso estatístico com a finalidade de facilitar uma 
+análise de evolução de uma série histórica. Este recurso estatístico é denominado 
+**NÚMERO ÍNDICE**. 
+
+- Em resumo, um número índice consiste em uma transformação dos valores de uma 
+série histórica qualquer de modo a torná-los mais "amigáveis", mas mantendo a 
+proporcionalidade das distâncias dos valores entre os períodos. 
+
+---
+&lt;div style="text-align: justify"&gt;
+## INTRODUÇÃO
+
+- O cálculo do **número índice** é muito simples e pode ser compreendido a 
+partir de uma sequência de 3 passos, são eles:
+
+  - **PASSO 1** -&gt; Selecione um período da série histórica como base de 
+  referência para a transformação. O período de referência é chamado 
+  simplesmente de **BASE**;
   
-- Nós já sabemos como calcular um número índice a partir de qualquer série de dados, como no exemplo
-já apresentado ainda na aula de Fluxo Circular da Renda:
+  - **PASSO 2** -&gt; Atribua um valor mais "amigável" para representar o valor da 
+  base, em geral, utiliza-se o **VALOR 100**;
   
+  - **PASSO 3** -&gt; Faça a transformação dos demais valores da série histórica, 
+  simplesmente, a partir de uma "**REGRA DE TRÊS**".
+
+---
+&lt;div style="text-align: justify"&gt;
+## INTRODUÇÃO
 
 &lt;table class="table table-striped" style="font-size: 24px; margin-left: auto; margin-right: auto;"&gt;
+&lt;caption style="font-size: initial !important;"&gt;EXEMPLO DE APLICAÇÃO DE NÚMERO ÍNDICE&lt;/caption&gt;
  &lt;thead&gt;
   &lt;tr&gt;
-   &lt;th style="text-align:center;"&gt; DATAS &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; VALORES &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; TRANSFORMAÇÕES &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; ÍNDICES &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Datas &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Valores &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Transformação &lt;/th&gt;
+   &lt;th style="text-align:center;"&gt; Número Índice &lt;/th&gt;
   &lt;/tr&gt;
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 12.589 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 12.589 = 100 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 100 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2016 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 13.785 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 13.785 x 100/ R$ 12.589 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 109,50 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2017 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 13.947 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 13.947 x 100/ R$ 12.589 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 110,79 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 2018 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 14.125 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 14.125 x 100/ R$ 12.589 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 112,20 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `12589 ` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `12589 = 100` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `100` &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 2019 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 15.352 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 15.352 x 100/ R$ 12.589 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 121,95 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `13785 ` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `13785 times frac{100}{12589} ` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `109.50` &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 2020 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 16.756 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 16.756 x 100/ R$ 12.589 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 133,10 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `13947 ` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ` 13947 times frac{100}{12589}` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `110.79` &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2021 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `14125 ` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ` 14125 times frac{100}{12589}` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `112.20` &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2022 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `15352 ` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ` 15352 times frac{100}{12589}` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `121.95` &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+   &lt;td style="text-align:center;"&gt; 2023 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `16756 ` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; ` 16756 times frac{100}{12589}` &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; `133.10` &lt;/td&gt;
   &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 
+---
+&lt;div style="text-align: justify"&gt;
+## INTRODUÇÃO
 
-- Mas e se nós quiséssemos calcular um índice único representativo de diferentes variáveis?
+- Sob uma perspectiva prática, pode-se citar como um problema recorrente da 
+macroeconomia a análise da evolução dos preços de uma cesta de consumo ao longo 
+do tempo. Assim, uma boa ideia para acompanhar a variação dessa série histórica é 
+utilizar o conceito de número índice.  
 
-
-
-
-
-
-
+- Dito de outra forma, vamos criar um número índice a partir de uma composição de
+séries históricas de preços de diferentes produtos. As tabelas a seguir 
+discutem o passo a passo para se construir o número índice de uma cesta de consumo
+(chamado de **ÍNDICE DE PREÇOS**).
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## INTRODUÇÃO
-
-
-**CONCEITOS**
-  
-  
-- Problema prático com duas variáveis. Qual procedimento deveria ser aplicado para criar um índice 
-único representativo das duas colunas de valores (que, por sua vez, representam duas variáveis):
-
-
-&lt;table class="table table-striped" style="font-size: 24px; margin-left: auto; margin-right: auto;"&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:center;"&gt; DATAS &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; A &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; B &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 100 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 5 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2016 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 110 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 10 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2017 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 121 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 20 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2018 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 133,1 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 40 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2019 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 146,41 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 80 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2020 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 161,05 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 160 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-- Uma proposta inicial seria somar as duas variáveis (A e B) para, então, transformar a série criada
-a partir da soma em um número índice.
-
-
-
-
-
-
-
-
----
-&lt;div style="text-align: justify"&gt;
-
-
-## INTRODUÇÃO
-
-
-**CONCEITOS**
-  
-  
-- Abaixo são apresentados cada um dos passos a serem tomados:
-
-
-&lt;table class="table table-striped" style="font-size: 24px; margin-left: auto; margin-right: auto;"&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:center;"&gt; DATAS &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; A &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; B &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; SOMA &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; TRANSFORMAÇÃO &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; ÍNDICE &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 100 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 5 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 105 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 105 = 100 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 100,00 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2016 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 110 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 10 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 120 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 120 x 100/ R$ 105 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 114,29 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2017 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 121 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 20 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 141 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 141 x 100/ R$ 105 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 134,29 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2018 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 133,1 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 40 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 173.11 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 173.11 x 100/ R$ 105 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 164,86 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2019 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 146,41 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 80 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 226.14 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 226.14 x 100/ R$ 105 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 215,63 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2020 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 161,05 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 160 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 321.10 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 321.10 x 100/ R$ 105 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 305,76 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-
-- O número índice criado não é representativo da série (pois a variável A, de maior valor, possui
-maior "influência" no cálculo da variação percentual).
-
-
-
-
-
-
-
-
----
-&lt;div style="text-align: justify"&gt;
-
-
-## INTRODUÇÃO
-
-
-**CONCEITOS**
-  
-  
-- Uma boa maneira seria ponderar a importância de cada uma das variáveis a partir de algum critério,
-por exemplo, como são preços de produtos, pode-se adotar como termo de ponderação a quantidade 
-consumida:
-
 
 &lt;table class="table table-striped" style="font-size: 24px; margin-left: auto; margin-right: auto;"&gt;
  &lt;thead&gt;
@@ -372,105 +220,16 @@ consumida:
  &lt;/thead&gt;
 &lt;tbody&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2018 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 100 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 5 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 22 &lt;/td&gt;
    &lt;td style="text-align:left;"&gt; R$ 100 x 2 +  R$ 5 x 22 = 310 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 100 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2016 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 110 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 10 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 22,3 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; R$ 110 x 2 +  R$ 10 x 22,3 = 443 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 142,9 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2017 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 121 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 2,2 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 20 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 23,4 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; R$ 121 x 2,2 +  R$ 20 x 23,4 = 734,2 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 236,8 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2018 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 133,1 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 2,5 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 40 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 21 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; R$ 133,1 x 2,5 +  R$ 40 x 21 = 1172,75 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 378,3 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
    &lt;td style="text-align:center;"&gt; 2019 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 146,41 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 2,1 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 80 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 25 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; R$ 146,41 x 2,1 +  R$ 80 x 25 = 2307,46 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 744,3 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2020 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 161,05 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 2,8 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 160 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 26 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; R$ 161,05 x 2,8 +  R$ 160 x 26 = 4610,94 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 1487,4 &lt;/td&gt;
-  &lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-
-- Agora, como a variável de menor preço possui maior importância na destinação dos recursos familiares
-seu impacto é melhor representado pelo índice criado. 
-
-
-
----
-&lt;div style="text-align: justify"&gt;
-
-
-## INTRODUÇÃO
-
-
-**CONCEITOS**
-  
-  
-- Contudo, é necessário manter uma quantidade de referência constante. Assim, 
-pode-se avaliar a concentração apenas do nível de preços.
-
-
-&lt;table class="table table-striped" style="font-size: 24px; margin-left: auto; margin-right: auto;"&gt;
- &lt;thead&gt;
-  &lt;tr&gt;
-   &lt;th style="text-align:center;"&gt; DATAS &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; A &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; QA &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; B &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; QB &lt;/th&gt;
-   &lt;th style="text-align:left;"&gt; SOMA &lt;/th&gt;
-   &lt;th style="text-align:center;"&gt; ÍNDICE &lt;/th&gt;
-  &lt;/tr&gt;
- &lt;/thead&gt;
-&lt;tbody&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2015 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 100 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; R$ 5 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 22 &lt;/td&gt;
-   &lt;td style="text-align:left;"&gt; R$ 100 x 2 +  R$ 5 x 22 = 310 &lt;/td&gt;
-   &lt;td style="text-align:center;"&gt; 100 &lt;/td&gt;
-  &lt;/tr&gt;
-  &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2016 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 110 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 2 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 10 &lt;/td&gt;
@@ -479,7 +238,7 @@ pode-se avaliar a concentração apenas do nível de preços.
    &lt;td style="text-align:center;"&gt; 141,9 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2017 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2020 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 121 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 2,2 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 20 &lt;/td&gt;
@@ -488,7 +247,7 @@ pode-se avaliar a concentração apenas do nível de preços.
    &lt;td style="text-align:center;"&gt; 220 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2018 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2021 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 133,1 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 2,5 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 40 &lt;/td&gt;
@@ -497,7 +256,7 @@ pode-se avaliar a concentração apenas do nível de preços.
    &lt;td style="text-align:center;"&gt; 369,7 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2019 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2022 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 146,41 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 2,1 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 80 &lt;/td&gt;
@@ -506,7 +265,7 @@ pode-se avaliar a concentração apenas do nível de preços.
    &lt;td style="text-align:center;"&gt; 662,2 &lt;/td&gt;
   &lt;/tr&gt;
   &lt;tr&gt;
-   &lt;td style="text-align:center;"&gt; 2020 &lt;/td&gt;
+   &lt;td style="text-align:center;"&gt; 2023 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 161,05 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; 2,8 &lt;/td&gt;
    &lt;td style="text-align:center;"&gt; R$ 160 &lt;/td&gt;
@@ -517,120 +276,90 @@ pode-se avaliar a concentração apenas do nível de preços.
 &lt;/tbody&gt;
 &lt;/table&gt;
 
-- De fato, é assim que é construído um **índice de preços**.
+---
+&lt;div style="text-align: justify"&gt;
+## INTRODUÇÃO
+  
+- O Brasil possui diversos **índices de inflação** mensurados periodicamente, 
+cada um com a sua finalidade, são exemplos:
 
+  - **Índice Nacional de Preços ao Consumidor (INPC)**: medir as variações de 
+  preços da cesta de consumo das populações assalariadas e com baixo rendimento;
 
+  - **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**: medir as 
+  variações de preços referentes ao consumo pessoal.
+  
+---
+&lt;div style="text-align: justify"&gt;
+## INTRODUÇÃO
 
+- Neste curso vamos nos concentrar  no **IPCA**, entretanto, exceto 
+especifidades de cálculos, as formas de análise são similares.
 
-
-
-
+  - O **IPCA** é um dos principais **índices de inflação**, visto que, 
+  corresponde a métrica utilizada pelo **Banco Central do Brasil** como 
+  **controle inflacionário** (metas de inflação).
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## INTRODUÇÃO
-
-
-**CONCEITOS**
-  
-&lt;/br&gt;
-  
-- O Brasil possui diversos **índices de inflação** mensurados periodicamente, cada um com a sua
-finalidade, são exemplos:
-
-  - **Índice Nacional de Preços ao Consumidor (INPC)**: medir as variações de preços da cesta de 
-  consumo das populações assalariadas e com baixo rendimento;
-
-  - **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**: medir as variações de preços referentes 
-  ao consumo pessoal;
-  
-  
-- Neste curso vamos nos concentrar  no **IPCA**, entretanto, exceto especifidades de cálculos as 
-formas de análise são similares.
-
-  - O **IPCA** é um dos principais **índices de inflação**, visto que, corresponde a métrica utilizada pelo Banco Central do Brasil como **controle inflacionário** (metas de inflação);
-
-
-
-
-
-
-
-
----
-&lt;div style="text-align: justify"&gt;
-
-
-## INTRODUÇÃO
-
-
-**CONCEITOS**
-  
-&lt;/br&gt;
 
 - Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
 
-  - Efetua a produção contínua e sistemática de índices de preços ao consumidor, tendo como **unidade 
-  de coleta estabelecimentos comerciais e de prestação de serviços, concessionária de serviços públicos
-  e domicílios (para levantamento de aluguel e condomínio)**; 
+  - Efetua a produção contínua e sistemática de índices de preços ao consumidor, 
+  tendo como **unidade de coleta estabelecimentos comerciais e de prestação de 
+  serviços, concessionária de serviços públicos e domicílios (para levantamento 
+  de aluguel e condomínio)**; 
   
-  - O período de coleta do IPCA estende-se, em geral, do dia **01 a 30 do mês de referência**;
-  
-  - A população-objetivo do IPCA abrange as famílias com rendimentos mensais compreendidos entre **1 
-  (um) e 40 (quarenta) salários-mínimos**, qualquer que seja a fonte de rendimentos, e residentes nas 
-  áreas urbanas das regiões.
-  
-  
-  
-  
-  
-  
-  
+  - O período de coleta do IPCA estende-se, em geral, do dia 
+  **01 a 30 do mês de referência**.
   
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## INTRODUÇÃO
 
-
-**CONCEITOS**
+- Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
   
+  - A população-objetivo do IPCA abrange as famílias com rendimentos mensais 
+  compreendidos entre **1 (um) e 40 (quarenta) salários-mínimos**, qualquer que 
+  seja a fonte de rendimentos, e residentes nas áreas urbanas das regiões;
+  
+  - Portanto, o foco é representar uma cesta de consumo típica da **classe média**.
+  
+---
+&lt;div style="text-align: justify"&gt;
+## INTRODUÇÃO
 
 - Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
 
-  - A periodicidade do **IPCA** é **mensal**;
+  - A periodicidade de coleta e divulgação do **IPCA** é **mensal**;
   
-  - Abrangendo as regiões metropolitanas de **Belém, Fortaleza, Recife, Salvador, Belo Horizonte, Rio de     Janeiro, São Paulo, Curitiba, Vitória e Porto Alegre, Brasília e municípios de Goiânia e Campo Grande**.
-  
-  - É constituído de forma hierarquizada, sendo que, seu cômputo é divido grupos (9), subgrupos (19), 
-  itens (51) e subitens (377). 
-
-  - O peso de cada um desses grupos no índice cheio é definido mensalmente, de acordo com os gastos das  
-  famílias em diferentes bens e serviços. Estes gastos, por sua vez, são captados pela **Pesquisa de 
-  Orçamento Familiar (POF)**.
-
-
-
-
-
+  - Abrangendo as regiões metropolitanas de **Belém, Fortaleza, Recife, 
+  Salvador, Belo Horizonte, Rio de Janeiro, São Paulo, Curitiba, Vitória e 
+  Porto Alegre, Brasília e municípios de Goiânia e Campo Grande**.
   
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## INTRODUÇÃO
+
+- Sobre o **Índice Nacional de Preços ao Consumidor Amplo (IPCA)**:
   
+  - É constituído de forma hierarquizada, sendo que, seu cômputo é divido grupos 
+  (9), subgrupos (19), itens (51) e subitens (377). O nível de produto está no 
+  subitem;
 
-**CONCEITOS**
+  - O peso de cada um desses grupos no índice cheio é definido mensalmente, de 
+  acordo com os gastos das famílias em diferentes bens e serviços. Estes gastos,
+  por sua vez, são captados pela **Pesquisa de Orçamento Familiar (POF)**.
 
+---
+## INTRODUÇÃO
 
-- Desde agosto de 1999 são 9 grupos:
+- Os grupos são definidos por tipos (usos) de produtos, conforme abaixo:
 
+.pull-left[
   1) **Alimentos e Bebidas**;
-  
+ 
   2) **Habitação**;
   
   3) **Artigos de Residência**;
@@ -638,7 +367,9 @@ formas de análise são similares.
   4) **Vestuário**;
   
   5) **Transportes**;
-  
+]
+
+.pull-right[
   6) **Comunicação**;
   
   7) **Saúde e Cuidados Pessoais**;
@@ -646,47 +377,23 @@ formas de análise são similares.
   8) **Despesas Pessoais**;
   
   9) **Educação**.
-
-
-
-
-
-
-
+]
 
 ---
-
-
 ## O BRASIL EM PERSPECTIVA
 
-
-<div id="htmlwidget-d3a9f5e6bd2bbed0fcc4" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-d3a9f5e6bd2bbed0fcc4">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-
+<div id="htmlwidget-1ed53412643552f79ba7" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-1ed53412643552f79ba7">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-6.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
 class: inverse, center, middle 
 name: conceitoipca
 
-
 ## CONCEITO DE INFLAÇÃO
-
-
-
-
-
-
-
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CONCEITO DE INFLAÇÃO
-
-
-&lt;/br&gt;
-
 
 - **INFLAÇÃO**:
 
@@ -694,241 +401,126 @@ name: conceitoipca
   preços (pode ser captada pelos índices de preços);
 
 
-&lt;/br&gt;
-
-
 - **HIPERINFLAÇÃO**:
 
   - Costuma-se definir como hiperinflação o aumento generalizado e persistente no nível de preços que 
   segue uma trajetória elevada e acelerada (não há um nível estrito para se definir a hiperinflação).
 
-
-
-
-
-
-
-
 ---
-
-
 ## O BRASIL EM PERSPECTIVA: INFLAÇÃO MENSAL "CHEIA"
 
-
-<div id="htmlwidget-ef7285bdf3a8292f3a50" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-ef7285bdf3a8292f3a50">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-
-
-
-
-
-
-
+<div id="htmlwidget-ac199143696ddee31e0e" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-ac199143696ddee31e0e">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-7.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
-
-
 ## O BRASIL EM PERSPECTIVA: PESOS ÍNDICE INFLAÇÃO
 
-
-<div id="htmlwidget-39222e180710fe2dc6ea" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-39222e180710fe2dc6ea">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-
-
-
-
-
-
-
+<div id="htmlwidget-12dade509ec7de4f1f1c" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-12dade509ec7de4f1f1c">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-8.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
-
-
 ## O BRASIL EM PERSPECTIVA
 
-
-<div id="htmlwidget-b6a7243bd5caf8b845ef" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-b6a7243bd5caf8b845ef">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-
-
+<div id="htmlwidget-511898f038ad04cc8f22" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-511898f038ad04cc8f22">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-9.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
-
-
-&lt;/br&gt;
-
 
 - **DESINFLAÇÃO**:
 
   - A desinflação corresponde a uma diminuição nas taxas de aumentos dos níveis de preço (os preços 
   começam a aumentar de maneira menos acelerada);
 
-
-&lt;/br&gt;
-
-
 - **DEFLAÇÃO**:
 
   - A deflação corresponde a uma situação em que há uma diminuição generalizada e persistente no 
   nível de preços (repare que a definição de deflação depende da persistência).
 
-  
-  
-
-
-
-
-  
 ---
-
-
 ## O BRASIL EM PERSPECTIVA
 
-
-<div id="htmlwidget-35217bb89014df6d0919" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-35217bb89014df6d0919">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-
-
-
-
-
-
-
+<div id="htmlwidget-1836e31936a563e3e620" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-1836e31936a563e3e620">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-10.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
-
-
 ## O BRASIL EM PERSPECTIVA
 
-
-<div id="htmlwidget-18de7f8ef60ff7361029" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-18de7f8ef60ff7361029">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-14.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-
-
-
-
-
-
-
+<div id="htmlwidget-fc049d3feec6056dbf4a" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-fc049d3feec6056dbf4a">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-11.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
 
+- CRITÉRIO DE AGRUPAMENTO: INFLUÊNCIA DE POLÍTICA GOVERNAMENTAL NOS PREÇOS:
 
-- Os itens do IPCA também podem ser "agrupados" a partir de outra estrutura, conforme segue:
-
-- **PREÇOS MONITORADOS (OU ADMINISTRADOS)**: O conjunto dos itens com preços administrados inclui 
+  - **PREÇOS MONITORADOS (OU ADMINISTRADOS)**: O conjunto dos itens com preços administrados inclui 
 impostos e taxas (IPVA, IPTU e taxa de água e esgoto), serviços de utilidade pública cujas tarifas 
 são reguladas ou autorizadas pelo poder público por meio de agências reguladoras ou fiscalizadoras 
 (telefonia, energia elétrica, planos de saúde, pedágio), derivados de petróleo cujo mercado está em 
 processo de liberalização, mas tem como virtual formadora de preço uma empresa estatal, e itens cujos
 preços podem ser considerados virtualmente livres (álcool e passagens aéreas);
 
-- **PREÇOS LIVRES (OU DE MERCADO)**: O conjunto dos itens com preços formados a partir de fatores 
-de oferta e demanda.
+---
+&lt;div style="text-align: justify"&gt;
+## CONCEITO ASSOCIADOS À INFLAÇÃO
 
+- CRITÉRIO DE AGRUPAMENTO: INFLUÊNCIA DE POLÍTICA GOVERNAMENTAL NOS PREÇOS:
 
-
-
-
-
-
+- **PREÇOS LIVRES (OU DE MERCADO)**: O conjunto dos itens com preços formados a 
+partir de fatores de oferta e demanda.
 
 ---
-
-
 ## O BRASIL EM PERSPECTIVA
 
-
-<div id="htmlwidget-ac811435220689cb0390" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-ac811435220689cb0390">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-15.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-
-
-
-
-
-
-
+<div id="htmlwidget-c07764810a8760e95bf2" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-c07764810a8760e95bf2">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-12.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
 
+---
+&lt;div style="text-align: justify"&gt;
+## CONCEITO ASSOCIADOS À INFLAÇÃO
 
-- Por sua vez, os preços livres também podem ser dividios de acordo com o grau de comercialização 
-com o resto do mundo.
+- CRITÉRIO DE AGRUPAMENTO: Comércio Internacional:
 
-
-- **COMERCIALIZÁVEIS**:
-
-  - alimentos industrializados e semi-elaborados, artigos de limpeza, higiene e beleza, mobiliário, 
-  utensílios domésticos, equipamentos eletro-eletrônicos, aquisição de veículos, cama/mesa/banho, 
-  fumo e bebidas, vestuário, remédios e material escolar;
-
-
-- **NÃO-COMERCIALIZÁVEIS**:
-
-  - produtos in natura, alimentação fora do domicílio, aluguel, linha telefônica, habitação-despesas
-  operacionais, veículos-seguro/reparos/lavagem/estacionamento, recreação e cultura, matrícula e 
-  mensalidade escolar, livros didáticos, serviços médicos e serviços pessoais.Monitorados: serviços 
-  públicos e residenciais, transporte público, combustíveis, plano de saúde, pedágio, licenciamento 
-  e empregado doméstico.
-
-
-
-
-
-
-
+  - **COMERCIALIZÁVEIS**: alimentos industrializados e semi-elaborados, artigos de limpeza, higiene e 
+  beleza, mobiliário, utensílios domésticos, equipamentos eletro-eletrônicos, 
+  aquisição de veículos, cama/mesa/banho, fumo e bebidas, vestuário, remédios e 
+  material escolar;
 
 ---
+&lt;div style="text-align: justify"&gt;
+## CONCEITO ASSOCIADOS À INFLAÇÃO
 
+- CRITÉRIO DE AGRUPAMENTO: Comércio Internacional:
 
+  - **NÃO-COMERCIALIZÁVEIS**: produtos in natura, alimentação fora do domicílio, aluguel, linha telefônica, 
+  habitação-despesas operacionais, veículos-seguro/reparos/lavagem/estacionamento, 
+  recreação e cultura, matrícula e mensalidade escolar, livros didáticos, 
+  serviços médicos e serviços pessoais.Monitorados: serviços públicos e 
+  residenciais, transporte público, combustíveis, plano de saúde, pedágio, 
+  licenciamento e empregado doméstico.
+
+---
 ## O BRASIL EM PERSPECTIVA
 
-
-<div id="htmlwidget-715c2bdd0ea5dc5fbcef" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
-<script type="application/json" data-for="htmlwidget-715c2bdd0ea5dc5fbcef">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-16.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-
-
-
-
-
-
-
+<div id="htmlwidget-c5063a8c05d7bc346d14" style="width:100%;height:100%;" class="widgetframe html-widget "></div>
+<script type="application/json" data-for="htmlwidget-c5063a8c05d7bc346d14">{"x":{"url":"index_files/figure-html//widgets/widget_unnamed-chunk-13.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
 
 ---
 class: inverse, center, middle 
 name: causas_inflacao
 
-
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-
-
-
-
-
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-&lt;/br&gt;
-
 
 - Pode-se elencar alguns fatores para aumento do nível de preços (generalizado e consistente), 
 principalmente:
@@ -938,116 +530,48 @@ principalmente:
  - **Choque de Oferta**;
  - **Inflação Inercial**.
  
- 
- &lt;/br&gt;
-
-
 - Todos os fatores referidos acima podem, inclusive, ocorrer simultaneamente. Em maior ou menor 
 impacto de cada um deles.
 
-
-
-
-
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-&lt;/br&gt;
 
 - **Inflação de Demanda**: Quando a economia está “muito aquecida” (nível alto de consumo) os 
 produtores tendem a aumentar os preços dos bens objetivando obter maior nível de lucro.
 
-
 &lt;img src="demanda.png" width="100%" style="display: block; margin: auto;" /&gt;
-
-
-
-
-
-
-
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-&lt;/br&gt;
 
 - **Inflação de Custos**: Quando o sistema produtivo é ineficiente, os custos de produção são 
 inerentemente maiores. Estes custos de produção são repassados aos bens finais. 
 
-
 &lt;img src="custos.png" width="40%" style="display: block; margin: auto;" /&gt;
-
-
-
-
-
-
-
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-&lt;/br&gt;
 
 - **Choque de Oferta**: Quando um fator inesperado (exógeno) causa uma diminuição no nível de 
 produção e/ou oferta. Com menor quantidade do bem no mercado, seu preço aumenta.
 
-
 &lt;img src="choque_oferta.png" width="80%" style="display: block; margin: auto;" /&gt;
-
-
-
-
-
-
-
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-&lt;/br&gt;
-
 
 - **Inflação Inercial**: Quando a inflação de um período é repassada contratualmente para o período 
 posterior devido as expectativas dos agentes de permanência da inflação.
 
-
 &lt;img src="inercial.png" width="60%" style="display: block; margin: auto;" /&gt;
-
-
-
-
-
-
-
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-&lt;/br&gt;
-
-
 
 - Para se **combater a inflação** existem, pelo menos, três grupos de **políticas**:
 
@@ -1059,155 +583,38 @@ posterior devido as expectativas dos agentes de permanência da inflação.
 
   - **Modificações Inerciais**: Alteração nas expectativas dos agentes.
 
-
-
-
-
-
-
-
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-&lt;/br&gt;
-
 
 - Também devido a inflação, **não se pode comparar valores monetários de maneira direta** (chamados 
 **valores nominais**);
 
-
-&lt;/br&gt;
-
-
 - Esta comparação direta é definida como **ilusão monetária**.
-
-
-
-
-
-
-
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## CAUSAS E CONSEQUÊNCIAS DA INFLAÇÃO
-
-
-&lt;/br&gt;
-
 
 - Assim, valores monetários diferentes representam "poderes de compra" diferentes de acordo com os 
 períodos e/ou regiões analisadas;
 
-
-&lt;/br&gt;
-
-
 - Neste sentido, **é necessário realizar uma "correção monetária"** de modo que os **valores nominais**.
-
-
 
 ---
 class: inverse, center, middle 
 name: referencias
 
-
 ## REFERÊNCIAS
-
 
 ---
 &lt;div style="text-align: justify"&gt;
-
-
 ## REFERÊNCIAS
 
 - N. Gregory Mankiw. Macroeconomia. 10º Edição. (Capítulo 5)
 
 - Olivier Blanchard. Macroeconomia. 7ª Edição. (Capítulo 8)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
