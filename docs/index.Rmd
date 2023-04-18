@@ -495,9 +495,19 @@ name: conceitoipca
 
   - A Inflação corresponde a uma situação em que há um aumento generalizado e persistente no nível de 
   preços (pode ser captada pelos índices de preços);
+  
+- Como no Brasil há um histórico de crescimento do índice de preços, pode-se 
+associar a variação do IPCA com taxa de inflação, assim como segue:
+
+$Taxa \ de \ Inflação \ no \ Período \ t = \frac{IPCA_t - IPCA_{t-1}}{IPCA_{t-1}}$
 
 
-- **HIPERINFLAÇÃO**:
+---
+<div style="text-align: justify">
+## CONCEITO DE INFLAÇÃO
+
+- Associado ao conceito de inflação, pode-se citar o conceito de 
+**HIPERINFLAÇÃO**:
 
   - Costuma-se definir como hiperinflação o aumento generalizado e persistente no nível de preços que 
   segue uma trajetória elevada e acelerada (não há um nível estrito para se definir a hiperinflação).
