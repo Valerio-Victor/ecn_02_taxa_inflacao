@@ -869,10 +869,6 @@ widgetframe::frameWidget(consolidado, width = '100%', height = '100%')
 <div style="text-align: justify">
 ## CONCEITO ASSOCIADOS À INFLAÇÃO
 
----
-<div style="text-align: justify">
-## CONCEITO ASSOCIADOS À INFLAÇÃO
-
 - CRITÉRIO DE AGRUPAMENTO: Comércio Internacional:
 
   - **COMERCIALIZÁVEIS**: alimentos industrializados e semi-elaborados, artigos de limpeza, higiene e 
